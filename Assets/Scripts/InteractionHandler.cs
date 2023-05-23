@@ -47,4 +47,10 @@ public class InteractionHandler : MonoBehaviour
         foreach(Transform child in selectedObject.transform)
             child.gameObject.layer = layer;
     }
+
+    private void OnInteract()
+    {
+        if (inter != null)
+            inter.OnInteract();
+    }
 }
